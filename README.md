@@ -31,7 +31,7 @@ hint = 2017210894190001839428447356135294400562239596233943357129936159390578867
 '''
 ~~~
 
-Như một thói quen thì mình sẽ factor N ( mình hay dùng tool factordb) thì nó ko factor được vì N quá lớn. Sau khi đọc kĩ lại đoạn script thì mình phát hiện ra ở có đoạn hint ở phía dưới và hint = p**4 - q**3 , kết hợp với N = p*q thì mình có hệ phương trình 2 ẩn.Và vấn đề lúc này là làm sao để giải hệ phương trình khi hint là số vô cùng lớn.
+Như một thói quen thì mình sẽ factor N ( mình hay dùng tool factordb) thì nó ko factor được vì N quá lớn. Sau khi đọc kĩ lại đoạn script thì mình phát hiện ra ở có đoạn hint ở phía dưới và hint = p^4 - q^3 , kết hợp với N = p*q thì mình có hệ phương trình 2 ẩn.Và vấn đề lúc này là làm sao để giải hệ phương trình khi hint là số vô cùng lớn.
 Sau một lúc tìm hiểu về z3 ( search gg để xem z3 là gì nha ) thì mình viết một đoạn script nho nhỏ:
 ~~~
 from z3 import *
