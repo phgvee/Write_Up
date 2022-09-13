@@ -1,8 +1,8 @@
 
-** BASE 64 **
+*** BASE 64 ***
 #crypto
 Bài này cho mình một file b64.py 
-"""
+~~~
 b64 = {
     "000000": "/",
     "000001": "+",
@@ -94,7 +94,7 @@ def encode(string):
 # print(encode(FLAG))
 
 # gOP+sRaKphbtmRjNr1+HlObgkl+Oa5R=
-"""
+~~~
 Sau khi đọc sourcecode thì mình đã hiểu ra cách encode :
    - plaintext ban đầu sẽ chuyển về mã Ascii, sau đó từ mã Ascii chuyển về nhị phân với đủ 8 bit
    - tiếp theo sẽ check xem nếu độ dài của chuỗi chia dư cho 6 == 4 thì sẽ cộng thêm "11" còn nếu chia dư cho 6 ==2 thì sẽ cộng thêm "1111"
@@ -103,7 +103,7 @@ Sau khi đọc sourcecode thì mình đã hiểu ra cách encode :
 Và Cipher của đề :  gOP+sRaKphbtmRjNr1+HlObgkl+Oa5R=
 Khi đã hiểu cách encode thì giờ chúng ta chỉ cần viết script để decode thui :
 
-"""
+~~~
 from multiprocessing import Value
 
 
@@ -192,7 +192,7 @@ def decode(string):
     return res 
 FLAG = "gOP+sRaKphbtmRjNr1+HlObgkl+Oa5R"
 print(decode(FLAG))
-"""
+~~~
 Nói sơ về cái script của mình nha:
   - mình sẽ chuyển flag về dạng binary dựa trên cái json
   - từ binary mình chuyển sang text ( Unicode)
