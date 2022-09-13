@@ -1,4 +1,4 @@
-***MAPLE CTF 2022***
+***MAPLE CTF***
 
 ***CRYPTO_ brsaby(50 pts)***
 
