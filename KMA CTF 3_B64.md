@@ -102,6 +102,7 @@ Sau khi đọc sourcecode thì mình đã hiểu ra cách encode :
    - cuối cùng là dựa vào json phía trên để chuyển thành cipher ( các cậu chú ý phần pad nữa nha)
    
 Và Cipher của đề :  gOP+sRaKphbtmRjNr1+HlObgkl+Oa5R=
+
 Khi đã hiểu cách encode thì giờ chúng ta chỉ cần viết script để decode thui :
 
 ~~~
