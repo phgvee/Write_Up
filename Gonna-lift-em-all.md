@@ -48,9 +48,9 @@ Nhìn lướt ngang tưởng RSA nhưng hong phải :smiley: . Giờ nhìn kĩ v
 
 Muốn tìm m thì ta phải tìm s và mà muốn có s thì phải tìm y.Nhưng y thì lại một số nguyên random trong khoảng ( 2,p-2). Lúc này ta nhìn lại c1 và bất ngờ ghê từ c1 thì ta có thể tìm y thông bằng cách chuyển vế :smiley_cat: 
 
-:::success
+
 y = c1 * g^-1^ mod p 
-:::
+
 có được y thì giờ chỉ cần viết script làm nốt những phần còn lại và get flah thui :triangular_flag_on_post: 
 
 ```python=
